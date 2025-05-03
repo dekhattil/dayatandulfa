@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hidayatullah and Maria Ulva</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark-bg: #3B0A2B;
+      --primary-color: #FF5E78;
+      --secondary-color: #FF9AA2;
+      --accent-color: #FFC1CC;
+      --text-color: #FFF0F5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-color);
+      font-family: 'Quicksand', sans-serif;
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    header {
+      background: linear-gradient(45deg, #9E0059, #FF5E78);
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+      transition: 0.4s ease;
+    }
+
+    header:hover {
+      filter: brightness(1.1);
+      transform: scale(1.01);
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.4rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .love-story {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      margin: 2rem 0;
+      cursor: pointer;
+    }
+
+    .love-story:hover {
+      transform: scale(1.02);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .love-story h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      cursor: pointer;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05) rotate(1deg);
+      filter: brightness(0.9);
+    }
+
+    .timeline {
+      padding: 2rem 0;
+    }
+
+    .timeline-item {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 15px;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+    }
+
+    .timeline-item:hover {
+      transform: translateX(1%) scale(1.01);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .timeline-item h3 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .quote {
+      font-family: 'Dancing Script', cursive;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      margin: 4rem 0;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.06);
+      font-size: 1.3rem;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .quote.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      background: rgba(255, 94, 120, 0.15);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+
+    audio {
+      display: block;
+      margin: 1rem auto 0 auto;
+      filter: drop-shadow(0 0 5px var(--accent-color));
+      transition: transform 0.3s ease;
+    }
+
+    audio:hover {
+      transform: scale(1.1);
+    }
+
+    .floating-heart {
+      position: fixed;
+      font-size: 1.5rem;
+      opacity: 0.2;
+      animation: float 6s infinite linear;
+      z-index: 0;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-80px) rotate(180deg); }
+      100% { transform: translateY(0) rotate(360deg); }
+    }
+
+    @media (hover: none) {
+      .gallery-item img:active,
+      .love-story:active,
+      .timeline-item:active {
+        transform: scale(1.05);
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="floating-heart" style="left:10%; top:20%">🤍</div>
+  <div class="floating-heart" style="left:30%; top:50%">🤍</div>
+  <div class="floating-heart" style="left:70%; top:30%">🤍</div>
+
+  <header>
+    <h1>Hidayatullah</h1>
+    <h1>🤍</h1>
+    <h1>Maria Ulva</h1>
+    <p>Hati dengan Jiwa Kami Selaras dan Seirama</p>
+    <audio controls autoplay loop>
+      <source src="https://github.com/dekhattil/database_audio/raw/refs/heads/main/guitar-karaoke-nocopyright-276385.mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+  </header>
+
+  <div class="container">
+    <section class="love-story">
+      <h2>Kisah Cinta Abang dan Adek</h2>
+      <p>Ikatan cinta kami yang berlandaskan kesederhanaan, diuji oleh kesabaran karena terpisah oleh jarak.</p>
+      <p>Perbedaan menjadi jembatan, kesunyian menemukan arti, dan dalam diam mereka menemukan bahasa cinta yang tak terucap.</p>
+    </section>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://raw.githubusercontent.com/dekhattil/database_image/refs/heads/main/IMG_20250503_184555.png" alt="Momen 1">
+      </div>
+      <div class="gallery-item">
+        <img src="https://raw.githubusercontent.com/dekhattil/database_image/refs/heads/main/IMG_20250503_184702.png" alt="Momen 2">
+      </div>
+      <div class="gallery-item">
+        <img src="https://raw.githubusercontent.com/dekhattil/database_image/refs/heads/main/IMG_20250503_184849.png" alt="Momen 3">
+      </div>
+    </div>
+
+    <section class="timeline">
+      <div class="timeline-item">
+        <h3>Perkenalan Tak Terduga</h3>
+        <p>11 Maret 2024 - Dalam randomnya squad PUBG Mobile mempertemukan kita secara virtual, cukup untuk kita saling mengenal, berbagi cerita background kita masing-masing dan pengalaman hidup.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Berpacaran</h3>
+        <p>22 April 2024 - Tak membutuhkan waktu lama bagi kita untuk saling yakin dan percaya hingga memutuskan untuk menjalin ikatan cinta dan menjaga kesetiaan.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Sumpah Setia</h3>
+        <p>Banyak yang lebih sempurna dari kita, namun kita yang saling melengkapi sesama itu jauh lebih berharga dari kesempurnaan</p>
+      </div>
+    </section>
+
+    <div class="quote" id="quote">
+      <p>"Kekagumanku pada cinta dan kasihmu akan tetap mengalir dalam sepi maupun dalam keramaian hariku"</p>
+      <p>- Hidayatullah</p>
+      <br>
+      <p>"Kau adalah anatomi paling sempurna yang tak pernah diajarkan di textbook manapun"</p>
+      <p>- Maria Ulva</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Saling Melengkapi Dalam Cinta. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Fade-in kutipan saat digulir
+    window.addEventListener('scroll', () => {
+      const quote = document.getElementById('quote');
+      const rect = quote.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        quote.classList.add('visible');
+      }
+    });
+  </script>
+</body>
+</html>
